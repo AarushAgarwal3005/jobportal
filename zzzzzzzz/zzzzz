@@ -1,3 +1,8 @@
-<!-- we use a middlewear named as cors to connet two ports for ex when we connect frontend to backend we connect via help of cors
-morgan- if any of the rest a[i is created it will tell in consone which api is hit,what time etc]0
+<!-- we use a middlewear named as cors to connet two ports for ex when we connect frontend to backend we connect via help of cors-->
+
+
+<!--morgan- if any of the rest a[i is created it will tell in consone which api is hit,what time etc]0
 watch blue dok -->
+
+
+<!-- we use ExpressjsAsync errors  to avoid try catch block -->
