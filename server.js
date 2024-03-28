@@ -7,8 +7,10 @@ import morgan from "morgan";
 import cors from'cors';
 
 //files import
+
 import testRoutes from './routes/testRoutes.js'
 import connectDB from "./config/db.js";
+import authRoutes from './routes/authRoutes.js'
 //config dot env
 dotenv.config();
 connectDB();
@@ -22,6 +24,7 @@ app.use(cors())
 app.use(morgan('dev'));
 //routes
 app.use('/api/v1/test', testRoutes)
+app.use('/api/v1/auth', authRoutes)
 // app.get('/',(req,res)=>
 // {
 //     res.send("<h1> welcome to this  JOB PORTAL</h1>")})
