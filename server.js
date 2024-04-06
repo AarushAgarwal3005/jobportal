@@ -14,7 +14,8 @@ import testRoutes from './routes/testRoutes.js'
 import connectDB from "./config/db.js";
 import authRoutes from './routes/authRoutes.js'
 import errorMiddlewear from "./middlewares/errorMiddlewear.js";
-import userRoutes from  './routes/userRoutes.js'
+import userRoutes from  './routes/userRoutes.js';
+import jobsRoutes from './routes/jobsRoutes.js'
 //config dot env
 dotenv.config();
 connectDB();
@@ -30,6 +31,7 @@ app.use(morgan('dev'));
 app.use('/api/v1/test', testRoutes)
 app.use('/api/v1/auth', authRoutes)
 app.use('/api/v1/user', userRoutes)
+app.use("/api/v1/jobs", jobsRoutes);
 app.use(errorMiddlewear)
 // app.get('/',(req,res)=>
 // {
